@@ -1,0 +1,28 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: 100vh;
+    padding: 0px 10px;
+}
+
+h1, h2 {
+    margin: 0;
+    line-height: 1;
+}
+
+h1 {
+    /* text-transform: uppercase; */
+    margin: 20px 0;
+    font-size: 32px;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+.remove-all {
+    cursor: pointer;
+    margin-top: 5px;
+}
