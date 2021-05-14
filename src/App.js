@@ -13,7 +13,6 @@ function App() {
   const addBook = (bookDetails) => {
     let newBook = { id: uuid(), ...bookDetails };
     setBooks([newBook, ...books]);
-    console.log(books);
   }
 
   const removeBook = (id) => {
@@ -26,7 +25,7 @@ function App() {
 
   const toggleIsRead = (id) => {
     const booksArr = books.map(book => {
-      if (book.id === id) return { ...book, isRead: !book.isRead }
+      if (book.id === id) return { ...book, isRead: !book.isRead };
       return book;
     });
 

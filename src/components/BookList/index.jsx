@@ -10,7 +10,7 @@ const index = ({ books, toggleIsRead, removeBook }) => {
     }
 
     const bookList = books.map(book =>
-        <Book key={book.id} book={book} toggleIsRead={toggleIsRead} removeBook={removeBook}/>
+        <Book key={book.id} book={book} toggleIsRead={toggleIsRead} removeBook={removeBook} />
     );
 
     return (

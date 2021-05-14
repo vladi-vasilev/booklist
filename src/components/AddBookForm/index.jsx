@@ -16,11 +16,10 @@ const Index = ({ addBook }) => {
         if (book.title.length > 1 && book.author.length > 1) {
             setValidation('');
             addBook(book);
-            setBook(emptyBookObj);    
+            setBook(emptyBookObj);
         } else {
             setValidation('Book title or book author must be longer');
         }
-
     }
 
     return (

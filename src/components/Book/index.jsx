@@ -10,7 +10,7 @@ const index = ({ book, toggleIsRead, removeBook }) => {
             </div>
             <button className="delete" type="button" onClick={() => removeBook(book.id)}>X</button>
         </li>
-    )
+    );
 }
 
 export default index;
