@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState } from 'react';
 import BookList from './components/BookList';
 import AddBookForm from './components/AddBookForm';
+import uuid from 'uuid-random';
 
 function App() {
   const [books, setBooks] = useState([
@@ -10,8 +11,9 @@ function App() {
   ]);
 
   const addBook = (bookDetails) => {
-    let newBook = { id: books.length + 1, ...bookDetails }
-    setBooks([...books, newBook]);
+    let newBook = { id: uuid(), ...bookDetails };
+    setBooks([newBook, ...books]);
+    console.log(books);
   }
 
   const removeBook = (id) => {
